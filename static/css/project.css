@@ -1,0 +1,172 @@
+#createButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+#createButton:hover {
+    background-color: #45a049;
+}
+
+body {
+    position: relative;
+}
+
+.popup-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 9999;
+}
+
+.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.popup label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.popup input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.popup textarea {
+    width: 100%;
+    height: auto;
+    min-height: 100px;
+    max-height: 200px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    resize: vertical;
+    overflow: auto;
+}
+
+.popup button {
+    display: block;
+    width: 80px;
+    margin-top: 10px;
+    padding: 5px;
+    background-color: #94C800;
+    color: #ffffff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.create-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    background-color: #94C800;
+    color: #ffffff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.result-box {
+    position: fixed;
+    width: 200px;
+    height: 100px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #007bff;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    display: none;
+}
+
+.fade-in {
+    animation: fade-in 0.3s;
+}
+
+.fade-out {
+    animation: fade-out 0.3s;
+}
+
+.close-animation {
+    animation: close-animation 0.3s;
+}
+
+.error {
+    border: 1px solid red;
+    animation: shake 0.5s;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-5px);
+    }
+
+    75% {
+        transform: translateX(5px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes close-animation {
+    0% {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(-50%, -100%);
+        opacity: 0;
+    }
+}

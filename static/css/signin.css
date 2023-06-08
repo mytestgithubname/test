@@ -1,0 +1,68 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #D9D9D9;
+    /* 백그라운드 색상 */
+}
+
+.container {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #4B4A4A;
+    /* 네모 배경색상 */
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    color: #FFFFFF;
+    /* 글자색상 */
+}
+
+.form-group input {
+    width: 100%;
+    padding: 5px;
+}
+
+.button-container {
+    text-align: center;
+}
+
+.button-container button {
+    padding: 10px 20px;
+    display: block;
+    margin: 0 auto;
+    /* 가운데 정렬 */
+    background-color: #828282;
+    /* 로그인 버튼 배경색상 */
+    color: #FFFFFF;
+    /* 로그인 버튼 글자색상 */
+}
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.button-container a {
+    text-decoration: none;
+    color: #C1C1C1;
+    /* 이미 아이디가 있으신가요 문구 색상 */
+    font-size: 12px;
+}
+
+.logo-container img {
+    width: auto;
+    height: auto;
+    max-width: 100px;
+    max-height: 100px;
+    cursor: pointer;
+}

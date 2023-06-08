@@ -1,0 +1,19 @@
+#terms {
+width: 80%;
+margin: 0 auto;
+padding: 20px;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+
+#checkboxContainer {
+margin-top: 20px;
+padding-left: 60px;
+margin-top: 10px;
+margin-left: 70px;
+}
+
+#agreeCheckbox {
+display: inline-block;
+vertical-align: middle;
+}

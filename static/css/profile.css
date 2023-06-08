@@ -1,0 +1,119 @@
+        /* 전체 스타일링 */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #D9D9D9;
+        }
+
+        /* 헤더 스타일링 */
+        header {
+            background-color: #D9D9D9;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 40px;
+        }
+
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .profile {
+            display: flex;
+            align-items: center;
+        }
+
+        .profile input[type="text"] {
+            padding: 5px;
+            margin-right: 10px;
+            border: 1px solid #ccc;
+        }
+
+        .profile-img-container {
+            position: relative;
+            cursor: pointer;
+        }
+
+        .profile-img-container img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+
+        .profile-dropdown {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            top: 100%;
+            right: 0;
+        }
+
+        .profile-dropdown a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .profile-img-container:hover .profile-dropdown {
+            display: block;
+        }
+
+        /* 구분선 스타일링 */
+        hr.divider {
+            border: none;
+            border-top: 1px solid black;
+            margin: 10px 0;
+        }
+
+        /* 프로필 섹션 스타일링 */
+        .profile-section {
+            text-align: center;
+        }
+
+        .profile-section img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+
+        .programming-languages {
+            margin-top: 10px;
+        }
+
+        .programming-languages label {
+            display: block;
+        }
+
+        .programming-languages select {
+            width: 150px;
+            padding: 5px;
+        }

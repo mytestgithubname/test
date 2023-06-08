@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/main.css')}}">
+
+</head>
+
+<body>
+    <header>
+        <div style="display: flex; align-items: center;">
+            <div class="logo">
+                <a href="main.html"><img src="{{url_for('static', filename='img/logo.png')}}" alt="로고 이미지"></a>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">메뉴</button>
+                <div class="dropdown-content">
+                    <a href="project.html">프로젝트</a>
+                    <a href="#">동료 찾기</a>
+                </div>
+            </div>
+        </div>
+        <div class="profile">
+            <input type="text" placeholder="검색">
+            <div class="profile-img-container">
+                <img src="img/profile.png" alt="프로필 이미지">
+                <div class="profile-dropdown">
+                    <a href="profile.html">마이페이지</a>
+                    <a href="#">로그아웃</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="center">
+        <a href="project.html" class="create-project">프로젝트 생성하러가기</a>
+    </div>
+
+    <script src="{{url_for('static', filename='js/main.js')}}"></script>
+</body>
+
+</html>
